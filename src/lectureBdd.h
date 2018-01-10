@@ -13,9 +13,14 @@
 
 #ifndef LECTUREBDD_H
 #define LECTUREBDD_H
+#define TAILLE_MAX 300
 #include "base_de_donnees.h"
 
 Ville* chargerBddVille(char nom_fichier[]);
+//char** bddEnTableaudeChar(char nom_fichier[]);
 int nb_de_ligne(char *nom_fichier);
+stock_entrepot charger_entrepot_disptach(char nom_fichier[]);
+int charger_dispatch_entrepot(char nom_fichier[]);
+disp_pick charger_dipatch_pick_up(char nom_fichier[]);
 #endif /* LECTUREBDD_H */
 
